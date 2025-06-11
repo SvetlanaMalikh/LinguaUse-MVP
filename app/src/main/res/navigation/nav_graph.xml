@@ -6,21 +6,21 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.linguause_mvp.MainFragment"
+        android:name="com.example.linguause_mvp.ui.MainFragment"
         android:label="Главный экран" />
 
     <fragment
         android:id="@+id/wordGameFragment"
-        android:name="com.example.linguause_mvp.WordGameFragment"
+        android:name="com.example.linguause_mvp.ui.WordGameFragment"
         android:label="Игра Слова" />
 
     <fragment
         android:id="@+id/sentenceGameFragment"
-        android:name="com.example.linguause_mvp.SentenceGameFragment"
+        android:name="com.example.linguause_mvp.ui.SentenceGameFragment"
         android:label="Игра Предложения" />
 
     <fragment
         android:id="@+id/dictionaryFragment"
-        android:name="com.example.linguause_mvp.DictionaryFragment"
+        android:name="com.example.linguause_mvp.ui.DictionaryFragment"
         android:label="Словарь" />
 </navigation>

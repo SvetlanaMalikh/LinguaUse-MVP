@@ -1,10 +1,11 @@
-package com.example.linguause_mvp
+package com.example.linguause_mvp.ui
 
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.linguause_mvp.R
 
 class MainFragment : Fragment(R.layout.fragment_main) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
