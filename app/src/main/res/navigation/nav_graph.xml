@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.linguause_mvp.MainFragment"
+        android:label="Главный экран" />
+
+    <fragment
+        android:id="@+id/wordGameFragment"
+        android:name="com.example.linguause_mvp.WordGameFragment"
+        android:label="Игра Слова" />
+
+    <fragment
+        android:id="@+id/sentenceGameFragment"
+        android:name="com.example.linguause_mvp.SentenceGameFragment"
+        android:label="Игра Предложения" />
+
+    <fragment
+        android:id="@+id/dictionaryFragment"
+        android:name="com.example.linguause_mvp.DictionaryFragment"
+        android:label="Словарь" />
+</navigation>

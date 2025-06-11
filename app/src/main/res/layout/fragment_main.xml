@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.LinearLayout>
+    <Button
+        android:id="@+id/btn_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Слова" />
+
+    <Button
+        android:id="@+id/btn_sentences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Предложения"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btn_dictionary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Словарь"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
