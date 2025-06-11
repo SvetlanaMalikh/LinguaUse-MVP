@@ -1,12 +1,12 @@
-package com.example.lingua_use_mvp.ui
+package com.example.linguause_mvp.ui
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.lingua_use_mvp.R
-import com.example.lingua_use_mvp.model.WordCard
+import com.example.linguause_mvp.R
+import com.example.linguause_mvp.model.WordCard
 
 class WordCardAdapter(
     private val items: List<WordCard>

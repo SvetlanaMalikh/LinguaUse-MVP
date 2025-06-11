@@ -1,7 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:text="Экран Предложения"
-    android:gravity="center"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:textSize="24sp"/>
+    android:layout_height="match_parent">
+
+    <!-- 📦 Основной вертикальный интерфейс -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top">
+
+        <!-- 📝 Отображение фразы, которую собирает пользователь -->
+        <TextView
+            android:id="@+id/user_input_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вы выбрали:"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 🧩 Контейнер для кнопок-слов -->
+        <LinearLayout
+            android:id="@+id/word_container"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center" />
+
+        <!-- 🔙 Кнопка "Отменить слово" -->
+        <Button
+            android:id="@+id/undo_button"
+            android:text="Отменить слово"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 🎙 Кнопка для голосового ввода -->
+        <Button
+            android:id="@+id/mic_button"
+            android:text="🎙 Говорить"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+        <!-- ✅ / ❌ Текст результата после проверки -->
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Результат"
+            android:textSize="20sp"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone" />
+
+        <!-- 🔊 Кнопка озвучки ответа -->
+        <ImageView
+            android:id="@+id/sound_button"
+            android:src="@android:drawable/ic_lock_silent_mode_off"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:visibility="gone" />
+
+        <!-- 👣 Прогресс-индикатор в виде горизонтальной полоски с кружками -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:id="@+id/progress_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp" />
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <!-- 👆 Прозрачный клик-контейнер поверх всего интерфейса, появляется после ответа -->
+    <View
+        android:id="@+id/click_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true" />
+</FrameLayout>

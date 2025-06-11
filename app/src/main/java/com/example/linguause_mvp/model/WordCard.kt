@@ -1,7 +1,12 @@
-package com.example.lingua_use_mvp.model
+package com.example.linguause_mvp.model
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "word_cards")
 data class WordCard(
+    @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val word: String,
-    val correctTranslation: String,
-    val wrongTranslations: List<String>
+    val translation: String,
+    val type: String // "noun", "verb" или "adjective"
 )
