@@ -3,10 +3,10 @@ package com.example.linguause_mvp.model
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "word_cards")
-data class WordCard(
+@Entity(tableName = "words")
+data class WordEntity(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val word: String,
     val translation: String,
-    val type: String // "noun", "verb" или "adjective"
+    val type: String // например: "verb", "noun", "adjective"
 )

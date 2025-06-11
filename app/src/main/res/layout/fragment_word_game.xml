@@ -1,7 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:text="Экран Слова"
-    android:gravity="center"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:textSize="24sp"/>
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/word_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Слово"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Счёт: 0"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/option1"
+        android:layout_width="match_parent"
+        android:contentDescription="Option button"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp" />
+
+    <Button
+        android:id="@+id/option2"
+        android:layout_width="match_parent"
+        android:contentDescription="Option button"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp" />
+
+    <Button
+        android:id="@+id/option3"
+        android:layout_width="match_parent"
+        android:contentDescription="Option button"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp" />
+
+    <Button
+        android:id="@+id/option4"
+        android:layout_width="match_parent"
+        android:contentDescription="Option button"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp" />
+
+</LinearLayout>
